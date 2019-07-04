@@ -9,22 +9,22 @@
  
 <body>
 
-    <div id="entry">
+    <h2>Most similar words according to TED talks</h2>
+
+        <p id="description">I trained a word2vec model with TED talk transscripts. Check out the words that are the most similar to your input.</p>
         <form action="/" method="post">
-            Get the most similar words<br>
-            <input name="word" type="text" name="input"><br>
+            <input id="inputbox" name="word" type="text" name="input"><br>
             <input type="submit" value="Submit"> 
         </form>
-    </div>
     <div>
         <% if(locals.similarWords){ %>
             <% for (let i = 0; i < similarWords.length; i++){ %>
-            <p><%= similarWords[i].word %> <%= similarWords[i].dist %></p>
+            <p id="output"><%= similarWords[i].word %> <%= similarWords[i].dist %></p>
 
             <% } %>
           <% } %>
           <% if(locals.error){ %>
-            <p><%= error %></p>
+            <p id="error"><%= error %></p>
           <% } %>
     </div>
 </body>
