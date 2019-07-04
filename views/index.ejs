@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Word2Vec Model</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
   </head>
  
 <body>
 
-    <div>
+    <div id="entry">
         <form action="/" method="post">
             Get the most similar words<br>
             <input name="word" type="text" name="input"><br>
@@ -17,14 +17,13 @@
         </form>
     </div>
     <div>
-        <% if(similarWords){ %>
+        <% if(locals.similarWords){ %>
             <% for (let i = 0; i < similarWords.length; i++){ %>
             <p><%= similarWords[i].word %> <%= similarWords[i].dist %></p>
 
+            <% } %>
           <% } %>
-          <% } %>
-  
-          <% if(error !== null){ %>
+          <% if(locals.error){ %>
             <p><%= error %></p>
           <% } %>
     </div>

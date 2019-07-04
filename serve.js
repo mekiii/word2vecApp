@@ -30,16 +30,18 @@ app.use(bodyParser.urlencoded({
 
 app.post('/', function (req, res) {
   getMostSimilarWords(req.body.word).then(function (result) {
-    console.log("result: " + typeof(result)); // "Stuff worked!"
     res.render('index', {
       similarWords: result,
-      error: null
-    });
+      error: null});
   }, function (err) {
+    responseString = 'We could not find anything similar to ' + req.body.word + ', sorry!'
+    res.render('index', {similarWords: null, error: responseString});
     console.log(err); // Error: "It broke"
   });
 
 })
+
+
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
