@@ -1,0 +1,18 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace
+}
+
+
+div {
+    text-align: center;
+    margin:auto;
+}
+
+input {
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+    font-size: 15pt;
+}
