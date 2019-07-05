@@ -31,11 +31,12 @@ app.use(bodyParser.urlencoded({
 app.post('/', function (req, res) {
   getMostSimilarWords(req.body.word).then(function (result) {
     res.render('index', {
+      inputWord: req.body.word,
       similarWords: result,
       error: null});
   }, function (err) {
     responseString = 'We could not find anything similar to ' + req.body.word + ', sorry!'
-    res.render('index', {similarWords: null, error: responseString});
+    res.render('index', {inputWord: req.body.word, similarWords: null, error: responseString});
     console.log(err); // Error: "It broke"
   });
 

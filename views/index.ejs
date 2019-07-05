@@ -4,29 +4,35 @@
     <meta charset="utf-8">
     <title>Word2Vec Model</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script type='text/javascript' src='p5/p5.js'></script>
+    <script type='text/javascript' src='p5/p5.dom.js'></script>
+    <script type='text/javascript' src='p5/sketch.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600&display=swap" rel="stylesheet">
   </head>
  
 <body>
-
     <h2>Most similar words according to TED talks</h2>
 
-        <p id="description">I trained a word2vec model with TED talk transscripts. Check out the words that are the most similar to your input.</p>
-        <form action="/" method="post">
-            <input id="inputbox" name="word" type="text" name="input"><br>
-            <input type="submit" value="Submit"> 
+        <p id="description">I trained a word2vec model with TED talk transcripts. Check out the words that are the most similar to your input.</p>
+        <form id="inputForm" action="/" method="post">
+            <input id="inputbox" name="word" type="text" name="input" value="<%= locals.inputWord %>"><br>
+            <!--<input type="submit" value="Submit"> -->
         </form>
+    <div id="canvasContainer">
+
+    </div>
     <div>
         <% if(locals.similarWords){ %>
             <% for (let i = 0; i < similarWords.length; i++){ %>
-            <p id="output"><%= similarWords[i].word %> <%= similarWords[i].dist %></p>
-
+            <p class="output"><%= similarWords[i].word %> <BR><span id="numbers"><%=similarWords[i].dist %></span></p>
             <% } %>
           <% } %>
           <% if(locals.error){ %>
             <p id="error"><%= error %></p>
           <% } %>
     </div>
+
 </body>
 
 </html>
