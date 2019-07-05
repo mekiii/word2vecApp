@@ -20,3 +20,4 @@ Just type in a word and after submission you will see the words that have been u
 ![Alt](https://i.imgur.com/82bizkZ.gif)
 
 ## Background
+![Alt](https://i.imgur.com/3yLPwkz.png)
