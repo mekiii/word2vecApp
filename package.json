@@ -1,0 +1,23 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serve.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mekiii/word2vecApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mekiii/word2vecApp/issues"
+  },
+  "homepage": "https://github.com/mekiii/word2vecApp#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "word2vec": "^1.1.4"
+  }
+}
