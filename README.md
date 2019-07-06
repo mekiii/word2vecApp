@@ -1,6 +1,6 @@
 # Word2Vec application with TED talk transcripts
 
-The word2Vec app delivers similar words by training a machine learning model (word2vec by gensim) with TED talk transcripts. I am using the npm package [word2vec](https://www.npmjs.com/package/word2vec) to word with the model via Node.js. 
+The word2Vec app delivers similar words by training a machine learning model ([word2vec by gensim](https://radimrehurek.com/gensim/models/word2vec.html)) with TED talk transcripts. I am using the npm package [word2vec](https://www.npmjs.com/package/word2vec) to word with the model via Node.js. 
 
 ## Installation
 
@@ -23,4 +23,5 @@ Just type in a word and after submission you will see the words that have been u
 ![Alt](https://i.imgur.com/82bizkZ.gif)
 
 ## Background
+
 ![Alt](https://i.imgur.com/3yLPwkz.png)
