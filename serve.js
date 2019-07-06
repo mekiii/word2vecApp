@@ -29,7 +29,8 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.post('/', function (req, res) {
-  getMostSimilarWords(req.body.word).then(function (result) {
+  let reqWord = req.body.word.toLowerCase()
+  getMostSimilarWords(reqWord).then(function (result) {
     res.render('index', {
       inputWord: req.body.word,
       similarWords: result,

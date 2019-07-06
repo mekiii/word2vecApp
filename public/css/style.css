@@ -8,6 +8,7 @@ body {
     line-height: 1.5rem;
     margin: auto;
     text-align: center;
+    overflow: hidden;
 }
 
 #canvasContainer{
@@ -38,8 +39,10 @@ div {
     font-size: 14pt;
     letter-spacing: 0.05em;
     color: green;
+    opacity: 0;
     transition: all 0.5s ease-out;
 }
+
 
 #error {
     color: red
@@ -61,6 +64,7 @@ input[type=text] {
     height:30px;
     border: none;
     border-bottom: 1px solid black;
+    transition: all 0.2s ease-out;
 }
 
 input[type=text]:focus {

@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <title>Word2Vec Model</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <script type='text/javascript' src='p5/p5.js'></script>
-    <script type='text/javascript' src='p5/p5.dom.js'></script>
-    <script type='text/javascript' src='p5/sketch.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600&display=swap" rel="stylesheet">
   </head>
@@ -27,12 +24,16 @@
             <% for (let i = 0; i < similarWords.length; i++){ %>
             <p class="output"><%= similarWords[i].word %> <BR><span id="numbers"><%=similarWords[i].dist %></span></p>
             <% } %>
+          
           <% } %>
           <% if(locals.error){ %>
             <p id="error"><%= error %></p>
           <% } %>
     </div>
 
+    <script type='text/javascript' src='p5/p5.js'></script>
+    <script type='text/javascript' src='p5/p5.dom.js'></script>
+    <script type='text/javascript' src='p5/sketch.js'></script>
 </body>
 
 </html>
