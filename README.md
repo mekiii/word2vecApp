@@ -4,9 +4,12 @@ The word2Vec app delivers similar words by training a machine learning model (wo
 
 ## Installation
 
-First download or pull this master branch, then initialize the server application
+First download or pull this master branch, then initialize the server application (install nodejs first, if you don't have it)
 
 ```bash
+#Install all packages
+npm install 
+#Start the server
 node serve.js
 ```
 
