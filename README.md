@@ -30,4 +30,5 @@ As an input the algorithm receives a large amount of text data (speeches, book c
 ![Alt](https://i.imgur.com/5yZ9WYr.png)
 
 
-I described the whole process in this article: https://medium.com/@mekong.lam_95819/using-ted-talks-for-machine-learning-1cbbf22b4d72
+I described the whole process in this [medium article](https://medium.com/@mekong.lam_95819/using-ted-talks-for-machine-learning-1cbbf22b4d72
+): 
