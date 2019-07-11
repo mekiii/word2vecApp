@@ -28,3 +28,5 @@ This summer I was doing a class on applied machine learning and was supposed to 
 As an input the algorithm receives a large amount of text data (speeches, book content, dictionaries, crawled text from websites and so on) and assigns each word to a corresponding vector in space (the dimension of the vector is typically around 50–1000, depending on the data set). These “word vectors” are positioned close to other words, that are used in a similar context such as within the same sentence. E.g. the word „sing“ could be positioned close to „song“. 
 
 ![Alt](https://i.imgur.com/3yLPwkz.png)
+
+I described the whole process in this article: https://medium.com/@mekong.lam_95819/using-ted-talks-for-machine-learning-1cbbf22b4d72
